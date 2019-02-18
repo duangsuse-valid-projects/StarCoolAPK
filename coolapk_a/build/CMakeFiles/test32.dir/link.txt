@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Werror -std=c99 -O3 -fno-stack-protector  -rdynamic -m32 CMakeFiles/test32.dir/main.c.o CMakeFiles/test32.dir/coolapk.c.o CMakeFiles/test32.dir/md5.c.o CMakeFiles/test32.dir/base64.c.o  -o test32 

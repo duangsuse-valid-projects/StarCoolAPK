@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoolapk.a  CMakeFiles/coolapk.dir/coolapk.c.o
+/usr/bin/ranlib libcoolapk.a

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/coolapk.c
+stdio.h
+-
+string.h
+-
+time.h
+-
+include/coolapk.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/coolapk.h
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/base64.h
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/ca_jni.h
+stdarg.h
+-
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/coolapk.h
+ca_jni.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/ca_jni.h
+md5_digest.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/md5_digest.h
+base64.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/base64.h
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/md5_digest.h
+stdint.h
+-
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/base64.c
+string.h
+-
+include/base64.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/base64.h
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/base64.h
+

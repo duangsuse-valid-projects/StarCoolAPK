@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -Werror -std=c99 -O3 -fno-stack-protector  -shared -Wl,-soname,liba.so -o liba.so CMakeFiles/a.dir/coolapk.c.o CMakeFiles/a.dir/md5.c.o CMakeFiles/a.dir/base64.c.o libbase64.a libmd5.a 

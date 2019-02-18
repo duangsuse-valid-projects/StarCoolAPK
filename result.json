@@ -1,0 +1,3602 @@
+[
+  {
+    "method": "POST",
+    "path_template": "feed/favorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3639A",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/follow",
+    "fun": {
+      "type": "Integer",
+      "name": "m3640B",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/unfollow",
+    "fun": {
+      "type": "Integer",
+      "name": "m3641C",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/cancelRecommend",
+    "fun": {
+      "type": "String",
+      "name": "m3642D",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/Recommend",
+    "fun": {
+      "type": "String",
+      "name": "m3643E",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "discovery/loadDiscoveryInfo",
+    "fun": {
+      "type": "DiscoveryQuery",
+      "name": "m3644F",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "query",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/tagDetail",
+    "fun": {
+      "type": "Topic",
+      "name": "m3645G",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/followTag",
+    "fun": {
+      "type": "Integer",
+      "name": "m3646H",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/unFollowTag",
+    "fun": {
+      "type": "Integer",
+      "name": "m3647I",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "message/receive",
+    "fun": {
+      "type": "Message",
+      "name": "m3648J",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "message/read",
+    "fun": {
+      "type": "NotifyCount",
+      "name": "m3649K",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "ukey",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "cloudInstall/task",
+    "fun": {
+      "type": "ServiceApp",
+      "name": "m3650L",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/qr",
+    "fun": {
+      "type": "ServiceApp",
+      "name": "m3651M",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "main/index",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3652a",
+      "args": [
+
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "main/headline",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3653a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "album/list",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3654a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "listType",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "account/changeAvatar",
+    "fun": {
+      "type": "String",
+      "name": "m3655a",
+      "args": [
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "main/checkHeadlineCount",
+    "fun": {
+      "type": "Integer",
+      "name": "m3656a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/detail",
+    "fun": {
+      "type": "ServiceApp",
+      "name": "m3657a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "installed",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "message/send",
+    "fun": {
+      "type": "Message",
+      "name": "m3658a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "quick_reply",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Part",
+          "name": "message",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/index",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3659a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/replyList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "FeedReply"
+      },
+      "name": "m3660a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "discussMode",
+          "type": "int",
+          "param": "2"
+        },
+        {
+          "ann": "Query",
+          "name": "feedType",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/tagFeedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3661a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "listType",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "album/addApk",
+    "fun": {
+      "type": "Integer",
+      "name": "m3662a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "apk/checkUpdate",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "PatchInfo"
+      },
+      "name": "m3663a",
+      "args": [
+        {
+          "ann": "Part",
+          "name": "pkgs",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "coolmarket_beta",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/search",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3664a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "q",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/uploadImage",
+    "fun": {
+      "type": "String",
+      "name": "m3665a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "fieldName",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "uploadDir",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "album/index",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3666a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/index?listType=cat",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3667a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "catId",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "rankType",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr5"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/recommendList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3668a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "title",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "subTitle",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "action",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr5"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr6"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/downloadStat",
+    "fun": {
+      "type": "Integer",
+      "name": "m3669a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "pn",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "aid",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "extra",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "ni",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Query",
+          "name": "uninstall",
+          "type": "String",
+          "param": "tr5"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "album/addApk",
+    "fun": {
+      "type": "Integer",
+      "name": "m3670a",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Field",
+          "name": "packageName",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Field",
+          "name": "title",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Field",
+          "name": "url",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Field",
+          "name": "note",
+          "type": "String",
+          "param": "tr5"
+        },
+        {
+          "ann": "Field",
+          "name": "displayOrder",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Field",
+          "name": "logo",
+          "type": "String",
+          "param": "tr6"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "main/init",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "init",
+      "args": [
+
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "main/updateList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3672b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/newFeed",
+    "fun": {
+      "type": "Feed",
+      "name": "m3673b",
+      "args": [
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/realRankList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "ServiceApp"
+      },
+      "name": "m3674b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/rating",
+    "fun": {
+      "type": {
+        "name": "Map",
+        "inner": "String,"
+      },
+      "name": "ring>>> m3675b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "value",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/search?searchType=developer",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "ServiceApp"
+      },
+      "name": "m3676b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "developer",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "apk/comment",
+    "fun": {
+      "type": "Feed",
+      "name": "m3677b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "apk/unFavorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3678b",
+      "args": [
+        {
+          "ann": "Field",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Field",
+          "name": "targetType",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "picture/list",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3679b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "@NonNull",
+          "param": "tring str"
+        },
+        {
+          "ann": "Query",
+          "name": "type",
+          "type": "@NonNull",
+          "param": "tring str2"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/reply",
+    "fun": {
+      "type": "FeedReply",
+      "name": "m3680b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "type",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "album/edit",
+    "fun": {
+      "type": "Integer",
+      "name": "m3681b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Field",
+          "name": "title",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Field",
+          "name": "intro",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/search",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3682b",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "q",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "rankType",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr5"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "device/ip",
+    "fun": {
+      "type": "String",
+      "name": "m3683c",
+      "args": [
+
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/newestList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3684c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "picture/newPicture",
+    "fun": {
+      "type": "Feed",
+      "name": "m3685c",
+      "args": [
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/categoryList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3686c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/albumlist",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3687c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "pageSize",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/discovererList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "RelatedData"
+      },
+      "name": "m3688c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/delGift",
+    "fun": {
+      "type": "String",
+      "name": "m3689c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "docId",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "gift",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/commentList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Feed"
+      },
+      "name": "m3690c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "listType",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/block",
+    "fun": {
+      "type": "String",
+      "name": "m3691c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "action",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "clearTypes",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/search?searchType=tag",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3692c",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "apkType",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "rankType",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr4"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr5"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/checkCount",
+    "fun": {
+      "type": "NotifyCount",
+      "name": "m3693d",
+      "args": [
+
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "discovery/index",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3694d",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "discovery/newDiscovery",
+    "fun": {
+      "type": "Integer",
+      "name": "m3695d",
+      "args": [
+        {
+          "ann": null,
+          "name": null,
+          "type": "Body",
+          "param": "equestBody requestBody"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/offline",
+    "fun": {
+      "type": "String",
+      "name": "m3696d",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "user/deleteAvatar",
+    "fun": {
+      "type": "String",
+      "name": "m3697d",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Field",
+          "name": "lock",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/ratingUserList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "RelatedData"
+      },
+      "name": "m3698d",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "album/create",
+    "fun": {
+      "type": "Integer",
+      "name": "m3699d",
+      "args": [
+        {
+          "ann": "Part",
+          "name": "title",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Part",
+          "name": "intro",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "{feedType}/search",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3700d",
+      "args": [
+        {
+          "ann": "Path",
+          "name": "feedType",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "q",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr3"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr4"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/giftList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Gift"
+      },
+      "name": "m3701e",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "picture/addToSplash",
+    "fun": {
+      "type": "String",
+      "name": "m3702e",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/like",
+    "fun": {
+      "type": "LikeResult",
+      "name": "m3703e",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "detail",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "picture/userPictures",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3704e",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "@NonNull",
+          "param": "tring str"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "album/delApk",
+    "fun": {
+      "type": "String",
+      "name": "m3705e",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Part",
+          "name": "packageName",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/blackList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "User"
+      },
+      "name": "m3706f",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/downloadVersionList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "VersionApp"
+      },
+      "name": "m3707f",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/unlike",
+    "fun": {
+      "type": "LikeResult",
+      "name": "m3708f",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "detail",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/developerAppList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3709f",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "album/editApkDisplayOrder",
+    "fun": {
+      "type": "String",
+      "name": "m3710f",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Field",
+          "name": "displayOrder",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/ignoreList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "User"
+      },
+      "name": "m3711g",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/follow",
+    "fun": {
+      "type": {
+        "name": "Map",
+        "inner": "String,"
+      },
+      "name": "ring>>> m3712g",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/deleteFeed",
+    "fun": {
+      "type": "String",
+      "name": "m3713g",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "notNotify",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/giftList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Gift"
+      },
+      "name": "m3714g",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "apkId",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "album/unFavorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3715g",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "targetType",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/limitList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "User"
+      },
+      "name": "m3716h",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/url",
+    "fun": {
+      "type": "String",
+      "name": "m3717h",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/deleteReply",
+    "fun": {
+      "type": "String",
+      "name": "m3718h",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "notNotify",
+          "type": "int",
+          "param": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/giftList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Gift"
+      },
+      "name": "m3719h",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/detail",
+    "fun": {
+      "type": "Feed",
+      "name": "m3720h",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "rid",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/recentFeedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3721i",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/unfollow",
+    "fun": {
+      "type": {
+        "name": "Map",
+        "inner": "String,"
+      },
+      "name": "ring>>> m3722i",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "album/search",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3723i",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "q",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "feed/unFavorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3724i",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "targetType",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/hotFeedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3725j",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "apk/favorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3726j",
+      "args": [
+        {
+          "ann": "Field",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/albumlist",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3727j",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "message/send",
+    "fun": {
+      "type": "Message",
+      "name": "m3728j",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Part",
+          "name": "message",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/tagList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Topic"
+      },
+      "name": "m3729k",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/unrating",
+    "fun": {
+      "type": {
+        "name": "Map",
+        "inner": "String,"
+      },
+      "name": "ring>>> m3730k",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "album/replyList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "FeedReply"
+      },
+      "name": "m3731k",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "MultipartPOST",
+    "path_template": "account/changeProfile",
+    "fun": {
+      "type": "UserProfile",
+      "name": "m3732k",
+      "args": [
+        {
+          "ann": "Part",
+          "name": "key",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Part",
+          "name": "value",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/replyToMeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3733l",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "apk/getGift",
+    "fun": {
+      "type": "String",
+      "name": "m3734l",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "docId",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/apkRatingList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3735l",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/editorChoiceList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3736m",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "album/detail",
+    "fun": {
+      "type": "Album",
+      "name": "m3737m",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/tagFeedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3738m",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "tag",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/followTagList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Topic"
+      },
+      "name": "m3739n",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "album/recommend",
+    "fun": {
+      "type": "String",
+      "name": "m3740n",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/feedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3741n",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/list",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3742o",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "FormUrlEncodedPOST",
+    "path_template": "album/favorite",
+    "fun": {
+      "type": "Integer",
+      "name": "m3743o",
+      "args": [
+        {
+          "ann": "Field",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "topic/feedList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3744o",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "type",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/atCommentMeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3745p",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "account/accessToken",
+    "fun": {
+      "type": "LoginInfo",
+      "name": "m3746p",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "code",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/likeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3747p",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/atMeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3748q",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/profile",
+    "fun": {
+      "type": "UserProfile",
+      "name": "m3749q",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/apkCommentList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3750q",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/commentMeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3751r",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/addToBlackList",
+    "fun": {
+      "type": "String",
+      "name": "m3752r",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/discoveryList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3753r",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "notification/feedLikeList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3754s",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/removeFromBlackList",
+    "fun": {
+      "type": "String",
+      "name": "m3755s",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/apkFollowList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3756s",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "message/list",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Message"
+      },
+      "name": "m3757t",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/addToIgnoreList",
+    "fun": {
+      "type": "String",
+      "name": "m3758t",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/replyList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3759t",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/newestList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3760u",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/removeFromIgnoreList",
+    "fun": {
+      "type": "String",
+      "name": "m3761u",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/followList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3762u",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/newestReplyList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3763v",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr2"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/addToLimitList",
+    "fun": {
+      "type": "String",
+      "name": "m3764v",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/fansList",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3765v",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path_template": "user/removeFromLimitList",
+    "fun": {
+      "type": "String",
+      "name": "m3766w",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "uid",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "user/search",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3767w",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "q",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/replyDetail",
+    "fun": {
+      "type": "FeedReply",
+      "name": "m3768x",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "id",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "message/chat",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Message"
+      },
+      "name": "m3769x",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "ukey",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/addToHeadline",
+    "fun": {
+      "type": "String",
+      "name": "m3770y",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "feedId",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "favorite/list",
+    "fun": {
+      "type": {
+        "name": "List",
+        "inner": "Entity"
+      },
+      "name": "m3771y",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "type",
+          "type": "String",
+          "param": "tr"
+        },
+        {
+          "ann": "Query",
+          "name": "page",
+          "type": "int",
+          "param": ""
+        },
+        {
+          "ann": "Query",
+          "name": "firstItem",
+          "type": "String",
+          "param": "tr2"
+        },
+        {
+          "ann": "Query",
+          "name": "lastItem",
+          "type": "String",
+          "param": "tr3"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path_template": "feed/removeFromHeadline",
+    "fun": {
+      "type": "String",
+      "name": "m3772z",
+      "args": [
+        {
+          "ann": "Query",
+          "name": "feedId",
+          "type": "String",
+          "param": "tr"
+        }
+      ]
+    }
+  }
+]

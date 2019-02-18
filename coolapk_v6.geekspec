@@ -1,0 +1,309 @@
+POST@favoriteFeed(id:String) -> Int
+  = /feed/favorite
+
+POST@followUser(uid:String) -> Int
+  = /user/follow
+
+POST@unfollowUser(uid:String) -> Int
+  = /user/unfollow
+
+POST@cancelFeedrecommend(id:String) -> String
+  = /feed/cancelRecommend
+
+POST@recommendFeed(id:String) -> String
+  = /feed/Recommend
+
+POST@loadDiscoveryInfo(query:String) -> object:DiscoveryQuery
+  = /discovery/loadDiscoveryInfo
+
+topicTagDetail(tag:String) -> object:Topic
+  = /topic/tagDetail
+
+followTag(tag:String) -> Int
+  = /feed/followTag
+
+unfollowTag(tag:String) -> Int
+  = /feed/unFollowTag
+
+receiveMessage(id:String) -> object:Message
+  = /message/receive
+
+readMessage(ukey:String) -> object:NotifyCount
+  = /message/read
+
+cloudInstallTask(id:String) -> object:ServiceApp
+  = /cloudInstall/task
+
+apkQrCode(id:String) -> object:ServiceApp
+  = /apk/qr
+
+index() -> array:Entity
+  = /main/index
+
+headline(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /main/headline
+
+albumList(page:Int, firstItem:String, lastItem:String, listType:String) -> array:Entity
+  = /album/list
+
+POST@changeAvatar(img-body:File) -> String
+  = /account/changeAvatar
+
+checkHeadlineCount(firstItem:String) -> Int
+  = /main/checkHeadlineCount
+
+apkDetail(id:String, installed:Int) -> object:ServiceApp
+  = /apk/detail
+
+MultipartPOST@sendMessage(uid:String, quick_reply:Int, message_partial:String) -> object:Message
+  = /message/send
+
+apkIndex(apkType:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /apk/index
+
+feedReplyList(id:String, page:Int, firstItem:String, lastItem:String, discussMode:Int, feedType:String) -> array:FeedReply
+  = /feed/replyList
+
+tagFeedList(tag:String, page:Int, firstItem:String, lastItem:String, listType:String) -> array:Entity
+  = /topic/tagFeedList
+  
+POST@albumAddapk(id:String, apk-body:ServiceApp) -> Int
+  = /album/addApk
+
+MultipartPOST@apkCheckUpdate(pkgs_partial:String, coolmarket_beta:String) -> array:PatchInfo
+  = /apk/checkUpdate
+  
+apkSearch(q:String, apkType:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /apk/search
+
+POST@feedUploadimage(fieldName:String, uploadDir:String, img-body:File) -> String
+  = /feed/uploadImage
+
+albumIndex(page:String, firstItem:String, lastItem:String) -> array:Entity
+  = /album/index
+
+apkCategory(catId:String, apkType:String, rankType:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /apk/index?listType=cat
+
+apkRecommendlist(apkType:String, title:String, subTitle:String, action:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /apk/recommendList
+
+apkDownloadStat(pn:String, aid:String, extra:String, ni:String, uninstall:String) -> Int
+  = /apk/downloadStat
+
+FormUrlEncodedPOST@albumAddApk(id:String, packageName-form:String, title-form:String, url-form:String, note-form:String, displayOrder-form:Int, logo-form:String) -> Int
+  = /album/addApk
+
+mainInitial() -> array:Entity
+  = /main/init
+
+mainUpdateList(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = /main/updateList
+
+POST@feedNewfeed(feed-body:Feed) -> object:Feed
+  = /feed/newFeed
+
+apkRealRankList(apkType:String) -> array:ServiceApp
+  = /apk/realRankList
+
+apkRating(id:String, value:Int) -> object:StringMap
+  = /apk/rating
+
+apkSearchDev(developer:String, page:Int, firstItem:String, lastItem:String) -> array:ServiceApp
+  = /apk/search?searchType=developer
+
+POST@apkComment(id:String, comment-body:String) -> object:Feed
+  = /apk/comment
+  
+// TODO
+
+FormUrlEncodedPOST@apkUnfavorite(, ) -> Int
+  = apk/unFavorite
+pictureList(tag:@NonNull, type:@NonNull, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = picture/list
+POST@feedReply(id:String, type:String, ) -> FeedReply
+  = feed/reply
+FormUrlEncodedPOST@albumEdit(id:String, , ) -> Int
+  = album/edit
+apkSearch(q:String, apkType:String, rankType:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = apk/search
+deviceIp() -> String
+  = device/ip
+apkNewestlist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = apk/newestList
+POST@pictureNewpicture() -> Feed
+  = picture/newPicture
+apkCategorylist(apkType:String) -> array:Entity
+  = apk/categoryList
+userAlbumlist(uid:String, pageSize:Int) -> array:Entity
+  = user/albumlist
+apkDiscovererlist(id:String, page:Int, firstItem:String, lastItem:String) -> array:RelatedData
+  = apk/discovererList
+userDelgift(docId:String, gift:String) -> String
+  = user/delGift
+apkCommentlist(id:String, listType:String, page:Int, firstItem:String, lastItem:String) -> array:Feed
+  = apk/commentList
+POST@userBlock(uid:String, action:String, clearTypes:String) -> String
+  = user/block
+apkSearch?searchtype=tag(tag:String, apkType:String, rankType:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = apk/search?searchType=tag
+notificationCheckcount() -> NotifyCount
+  = notification/checkCount
+discoveryIndex(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = discovery/index
+POST@discoveryNewdiscovery() -> Int
+  = discovery/newDiscovery
+apkOffline(id:String) -> String
+  = apk/offline
+FormUrlEncodedPOST@userDeleteavatar(uid:String, ) -> String
+  = user/deleteAvatar
+apkRatinguserlist(id:String, page:Int, firstItem:String, lastItem:String) -> array:RelatedData
+  = apk/ratingUserList
+MultipartPOST@albumCreate(, ) -> Int
+  = album/create
+{feedType}Search(, q:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = {feedType}/search
+apkGiftlist(page:Int, firstItem:String, lastItem:String) -> array:Gift
+  = apk/giftList
+pictureAddtosplash(id:String) -> String
+  = picture/addToSplash
+POST@feedLike(id:String, detail:Int) -> LikeResult
+  = feed/like
+pictureUserpictures(uid:@NonNull, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = picture/userPictures
+MultipartPOST@albumDelapk(id:String, ) -> String
+  = album/delApk
+userBlacklist(page:Int, firstItem:String, lastItem:String) -> array:User
+  = user/blackList
+apkDownloadversionlist(id:String) -> array:VersionApp
+  = apk/downloadVersionList
+POST@feedUnlike(id:String, detail:Int) -> LikeResult
+  = feed/unlike
+apkDeveloperapplist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = apk/developerAppList
+FormUrlEncodedPOST@albumEditapkdisplayorder(id:String, ) -> String
+  = album/editApkDisplayOrder
+userIgnorelist(page:Int, firstItem:String, lastItem:String) -> array:User
+  = user/ignoreList
+apkFollow(id:String) -> :String,
+  = apk/follow
+POST@feedDeletefeed(id:String, notNotify:Int) -> String
+  = feed/deleteFeed
+apkGiftlist(apkId:String, page:Int, firstItem:String, lastItem:String) -> array:Gift
+  = apk/giftList
+POST@albumUnfavorite(id:String, targetType:String) -> Int
+  = album/unFavorite
+userLimitlist(page:Int, firstItem:String, lastItem:String) -> array:User
+  = user/limitList
+apkUrl(id:String) -> String
+  = apk/url
+POST@feedDeletereply(id:String, notNotify:Int) -> String
+  = feed/deleteReply
+userGiftlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Gift
+  = user/giftList
+feedDetail(id:String, rid:String) -> Feed
+  = feed/detail
+topicRecentfeedlist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = topic/recentFeedList
+apkUnfollow(id:String) -> :String,
+  = apk/unfollow
+albumSearch(q:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = album/search
+POST@feedUnfavorite(id:String, targetType:String) -> Int
+  = feed/unFavorite
+topicHotfeedlist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = topic/hotFeedList
+FormUrlEncodedPOST@apkFavorite() -> Int
+  = apk/favorite
+userAlbumlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/albumlist
+MultipartPOST@messageSend(uid:String, ) -> Message
+  = message/send
+topicTaglist(page:Int, firstItem:String, lastItem:String) -> array:Topic
+  = topic/tagList
+apkUnrating(id:String) -> :String,
+  = apk/unrating
+albumReplylist(id:String, page:Int, firstItem:String, lastItem:String) -> array:FeedReply
+  = album/replyList
+MultipartPOST@accountChangeprofile(, ) -> UserProfile
+  = account/changeProfile
+userReplytomelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/replyToMeList
+apkGetgift(docId:String) -> String
+  = apk/getGift
+userApkratinglist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/apkRatingList
+feedEditorchoicelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = feed/editorChoiceList
+albumDetail(id:String) -> Album
+  = album/detail
+topicTagfeedlist(tag:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = topic/tagFeedList
+userFollowtaglist(page:Int, firstItem:String, lastItem:String) -> array:Topic
+  = user/followTagList
+POST@albumRecommend(id:String) -> String
+  = album/recommend
+userFeedlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/feedList
+notificationList(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = notification/list
+FormUrlEncodedPOST@albumFavorite() -> Int
+  = album/favorite
+topicFeedlist(type:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = topic/feedList
+notificationAtcommentmelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = notification/atCommentMeList
+accountAccesstoken(code:String) -> LoginInfo
+  = account/accessToken
+userLikelist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/likeList
+notificationAtmelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = notification/atMeList
+userProfile(uid:String) -> UserProfile
+  = user/profile
+userApkcommentlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/apkCommentList
+notificationCommentmelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = notification/commentMeList
+POST@userAddtoblacklist(uid:String) -> String
+  = user/addToBlackList
+userDiscoverylist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/discoveryList
+notificationFeedlikelist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = notification/feedLikeList
+POST@userRemovefromblacklist(uid:String) -> String
+  = user/removeFromBlackList
+userApkfollowlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/apkFollowList
+messageList(page:Int, firstItem:String, lastItem:String) -> array:Message
+  = message/list
+POST@userAddtoignorelist(uid:String) -> String
+  = user/addToIgnoreList
+userReplylist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/replyList
+feedNewestlist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = feed/newestList
+POST@userRemovefromignorelist(uid:String) -> String
+  = user/removeFromIgnoreList
+userFollowlist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/followList
+feedNewestreplylist(page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = feed/newestReplyList
+POST@userAddtolimitlist(uid:String) -> String
+  = user/addToLimitList
+userFanslist(uid:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/fansList
+POST@userRemovefromlimitlist(uid:String) -> String
+  = user/removeFromLimitList
+userSearch(q:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = user/search
+feedReplydetail(id:String) -> FeedReply
+  = feed/replyDetail
+messageChat(ukey:String, page:Int, firstItem:String, lastItem:String) -> array:Message
+  = message/chat
+feedAddtoheadline(feedId:String) -> String
+  = feed/addToHeadline
+favoriteList(type:String, page:Int, firstItem:String, lastItem:String) -> array:Entity
+  = favorite/list
+feedRemovefromheadline(feedId:String) -> String
+  = feed/removeFromHeadline

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/md5_digest.h
+stdint.h
+-
+
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/md5.c
+string.h
+-
+include/md5_digest.h
+/home/DuangSUSE/Projects/HackingCoolApk/liba/RE/coolapk_a/include/md5_digest.h
+
